@@ -412,12 +412,12 @@
             <h2>Contact Me</h2>
         </div>
 
-        <form action="https://formspree.io/f/xrbyabzb" method="post" class="scroll-bottom">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Your Address">
-            <input type="text" placeholder="Phone Number">
-            <textarea name="" id="" rows="10" placeholder="Your Message"></textarea>
+        <form action="https://formspree.io/f/xrbyabzb" method="POST" class="scroll-bottom">
+            <label><input type="text" name="name" placeholder="Your Name"></label>
+            <label><input type="email" name="email" placeholder="Your Email" required></label> 
+            <label> <input type="text" name="address" placeholder="Your Address"></label>
+            <label> <input type="tel" name="number" placeholder="Phone Number" maxlength="10"></label>
+            <label><textarea name="message" id="" rows="10" placeholder="Your Message" required></textarea></label>
             <div class="btn-box formBtn">
                 <button type="submit" class="btn">Send Message</button>
             </div>
